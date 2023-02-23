@@ -1,0 +1,57 @@
+{
+    "type": "array",
+    "length": {
+      "type": "number",
+      "subtype": "u64",
+      "range": {
+        "low": 500,
+        "high": 501,
+        "step": 1
+      }
+    },
+    "content": {
+      "type": "object",
+      "id": {
+        "type": "number",
+        "id": {},
+        "subtype": "i32"
+      },
+      "total": {
+        "optional": false,
+        "type": "number",
+        "subtype":"i32",
+        "range": {
+            "low": 2000,
+            "high":6000,
+            "step":1000
+        }
+      },
+      "quantity": {
+        "optional": false,
+        "type": "number",
+        "subtype":"i32",
+        "range": {
+            "low": 1,
+            "high":5,
+            "step":1
+        }
+      },
+      "customer_id":{
+        "optional":false,
+        "type":"same_as",
+        "ref": "customers.content.id"
+      },
+      "listing_id":{
+        "optional":false,
+        "type":"same_as",
+        "ref": "coupon_listings.content.id"
+      },
+      "transaction_date": {
+        "optional": false,
+        "type": "date_time",
+        "format": "%Y-%m-%dT%H:%M:%S%z",
+        "begin": "2020-01-01T00:00:00+0000",
+        "end": "2023-01-10T00:00:00+0000"
+        }
+    }
+}

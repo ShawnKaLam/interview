@@ -1,0 +1,250 @@
+{
+    "type": "array",
+    "length": {
+      "type": "number",
+      "subtype": "u64",
+      "range": {
+        "low": 100,
+        "high": 101,
+        "step": 1
+      }
+    },
+    "content": {
+      "type": "object",
+      "id": {
+        "type": "number",
+        "id": {},
+        "subtype": "i32"
+      },
+      "name": {
+        "optional": false,
+        "type": "string",
+        "faker": {
+            "generator": "first_name"
+        }
+      },
+      "phone": {
+        "optional": false,
+        "type": "number",
+        "subtype":"i32",
+        "range": {
+            "low": 50000000,
+            "high":99999999,
+            "step":1
+        }
+      },
+      "email": {
+        "optional": false,
+        "type": "string",
+        "faker": {
+            "generator": "safe_email"
+        }
+      },
+      "username":{
+        "optional": false,
+        "type": "string",
+        "faker": {
+            "generator": "username"
+        }
+      },
+      "password":{
+        "optional": false,
+        "type": "string",
+        "pattern": "1234"
+      },
+      "gender":{
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+            {
+              "type": "string",
+              "pattern": "M"
+            },
+            {
+              "type": "string",
+              "pattern": "F"
+            }
+          ]
+      },
+      "yob":{
+        "optional": false,
+        "type": "number",
+        "subtype": "i32",
+        "range": {
+            "low": 1950,
+            "high":2006,
+            "step":1
+        }
+      },
+      "mob":{
+        "optional": false,
+        "type": "number",
+        "subtype": "i32",
+        "range": {
+            "low": 1,
+            "high":12,
+            "step":1
+        }
+      },
+      "occupation": {
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+            {
+              "type": "string",
+              "pattern": "Housewife"
+            },
+            {
+              "type": "string",
+              "pattern": "Student"
+            },
+            {
+              "type": "string",
+              "pattern": "Teacher"
+            },
+            {
+              "type": "string",
+              "pattern": "Restaurant Worker"
+            },
+            {
+              "type": "string",
+              "pattern": "Civil Servant"
+            },
+            {
+              "type": "string",
+              "pattern": "Technician"
+            },
+            {
+              "type": "string",
+              "pattern": "Accountant"
+            },
+            {
+              "type": "string",
+              "pattern": "Driver"
+            },
+            {
+              "type": "string",
+              "pattern": "Guard"
+            },
+            {
+              "type": "string",
+              "pattern": "Cleaner"
+            }
+          ]
+      },
+      "income_group": {
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+            {
+              "type": "string",
+              "pattern": "Below HKD9999"
+            },
+            {
+              "type": "string",
+              "pattern": "HKD10000 to HKD19999"
+            },
+            {
+              "type": "string",
+              "pattern": "HKD20000 to HKD29999"
+            },
+            {
+              "type": "string",
+              "pattern": "HKD30000 to HKD39999"
+            },
+            {
+              "type": "string",
+              "pattern": "HKD40000 to HKD49999"
+            },
+            {
+              "type": "string",
+              "pattern": "Above HKD50000"
+            }
+        ]
+      },
+      "region": {
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+            {
+              "type": "string",
+              "pattern": "Central and Western"
+            },
+            {
+              "type": "string",
+              "pattern": "Eastern"
+            },
+            {
+              "type": "string",
+              "pattern": "Southern"
+            },
+            {
+              "type": "string",
+              "pattern": "Wan Chai"
+            },
+            {
+              "type": "string",
+              "pattern": "Kowloon City"
+            },
+            {
+              "type": "string",
+              "pattern": "Kwun Tong"
+            },
+            {
+              "type": "string",
+              "pattern": "Sham Shui Po"
+            },
+            {
+              "type": "string",
+              "pattern": "Wong Tai Sin"
+            },
+            {
+              "type": "string",
+              "pattern": "Yau Tsim Mong"
+            },
+            {
+              "type": "string",
+              "pattern": "Islands"
+            },
+            {
+              "type": "string",
+              "pattern": "Kwai Tsing"
+            },
+            {
+              "type": "string",
+              "pattern": "North"
+            },
+            {
+              "type": "string",
+              "pattern": "Sai Kung"
+            },
+            {
+              "type": "string",
+              "pattern": "Shatin"
+            },
+            {
+              "type": "string",
+              "pattern": "Tai Po"
+            },
+            {
+              "type": "string",
+              "pattern": "Tsuen Wan"
+            },
+            {
+              "type": "string",
+              "pattern": "Tuen Mun"
+            },
+            {
+              "type": "string",
+              "pattern": "Yuen Long"
+            }
+        ]
+      },
+      "created_at": {
+        "type": "date_time",
+        "format": "%Y-%m-%dT%H:%M:%S%z",
+        "begin": "2020-01-01T00:00:00+0000",
+        "end": "2023-01-10T00:00:00+0000"
+      }
+    }
+}

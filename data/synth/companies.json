@@ -1,0 +1,111 @@
+{
+  "type": "array",
+  "length": {
+    "type": "number",
+    "subtype": "u64",
+    "range": {
+      "low": 6,
+      "high": 7,
+      "step": 1
+    }
+  },
+  "content": {
+    "type": "object",
+    "id": {
+      "type": "number",
+      "id": {},
+      "subtype": "i32"
+    },
+    "name": {
+      "optional": false,
+      "type": "string",
+      "faker": {
+          "generator": "company_name"
+      }
+    },
+    "category": {
+      "optional": false,
+      "type": "string",
+      "faker": {
+          "generator": "industry"
+      }
+    },
+    "number_of_store": {
+      "optional": false,
+      "type": "number",
+      "subtype": "i32",
+      "range": {
+        "low": 1,
+        "high": 10,
+        "step": 1
+      }
+    },
+    "target_customer": {
+      "optional": false,
+      "type": "one_of",
+      "variants": [
+        {
+          "type": "string",
+          "pattern": "high-end"
+        },
+        {
+          "type": "string",
+          "pattern": "middle"
+        },
+        {
+          "type": "string",
+          "pattern": "low-end"
+        }
+      ]
+    },
+    "company_type": {
+      "optional": false,
+      "type": "one_of",
+      "variants": [
+        {
+          "type": "string",
+          "pattern": "retail"
+        },
+        {
+          "type": "string",
+          "pattern": "catering"
+        }
+      ]
+    },
+    "found_date": {
+      "type": "date_time",
+      "format": "%Y-%m-%d",
+      "subtype": "naive_date",
+      "begin": "1990-01-01",
+      "end": "2002-01-01"
+    },
+    "size": {
+      "optional": false,
+      "type": "one_of",
+      "variants": [
+        {
+          "type": "string",
+          "pattern": "large"
+        },
+        {
+          "type": "string",
+          "pattern": "middle"
+        },
+        {
+          "type": "string",
+          "pattern": "small"
+        }
+      ]
+    },
+    "username": {
+      "type": "string",
+      "faker": {
+          "generator": "username"
+      }
+    },
+    "password": {
+      "type": "string",
+      "pattern": "[a-z0-9]{8,20}"
+    }
+  }
+}

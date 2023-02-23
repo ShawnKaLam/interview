@@ -1,0 +1,132 @@
+{
+    "type": "array",
+    "length": {
+      "type": "number",
+      "subtype": "u64",
+      "range": {
+        "low": 50,
+        "high": 51,
+        "step": 1
+      }
+    },
+    "content": {
+      "type": "object",
+      "id": {
+        "type": "number",
+        "subtype": "i32",
+        "id": {}
+      },  
+      "name": {
+        "optional": false,
+        "type": "string",
+        "faker": {
+            "generator": "company_name"
+        }
+      },
+      "username": {
+        "optional": false,
+        "type": "string",
+        "faker": {
+            "generator": "username"
+        }
+      },
+      "password": {
+        "optional": false,
+        "type": "string",
+        "pattern": "[a-z0-9]{8,20}"
+      },
+      "location": {
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+          {
+            "type": "string",
+            "pattern": "Central and Western"
+          },
+          {
+            "type": "string",
+            "pattern": "Eastern"
+          },
+          {
+            "type": "string",
+            "pattern": "Southern"
+          },
+          {
+            "type": "string",
+            "pattern": "Wan Chai"
+          },
+          {
+            "type": "string",
+            "pattern": "Kowloon City"
+          },
+          {
+            "type": "string",
+            "pattern": "Kwun Tong"
+          },
+          {
+            "type": "string",
+            "pattern": "Sham Shui Po"
+          },
+          {
+            "type": "string",
+            "pattern": "Wong Tai Sin"
+          },
+          {
+            "type": "string",
+            "pattern": "Yau Tsim Mong"
+          },
+          {
+            "type": "string",
+            "pattern": "Islands"
+          },
+          {
+            "type": "string",
+            "pattern": "Kwai Tsing"
+          },
+          {
+            "type": "string",
+            "pattern": "North"
+          },
+          {
+            "type": "string",
+            "pattern": "Sai Kung"
+          },
+          {
+            "type": "string",
+            "pattern": "Shatin"
+          },
+          {
+            "type": "string",
+            "pattern": "Tai Po"
+          },
+          {
+            "type": "string",
+            "pattern": "Tsuen Wan"
+          },
+          {
+            "type": "string",
+            "pattern": "Tuen Mun"
+          },
+          {
+            "type": "string",
+            "pattern": "Yuen Long"
+          }
+        ]
+      },
+      "size": {
+        "optional": false,
+        "type": "number",
+        "subtype": "i32",
+        "range": {
+          "low": 12,
+          "high": 40,
+          "step": 1
+        }
+      },
+      "company_id": {
+        "optional": false,
+        "type": "same_as",
+        "ref": "companies.content.id"      
+      }
+    }
+}

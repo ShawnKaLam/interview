@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "zeta-medley-376406",
+  "private_key_id": "d8d5af5fad38e55ee37462ae39ccd5685cc727f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/XiT5QgmEKJsr\nyExiiFE3D/BVOGsP4ZE+7tWVzAWNSuos0GMSRbjAI+fNrh/Ds8Z7azGumAUwTgjR\nRolXLmRb/Ut+hMpvGzB+4KhlVLAfnknzaWTcZqQs89I49fuXt45Trq2ZlVfSxlPY\njZoCTnzGMNHoPFddVpMbdzvefzS+2J+KgEqrqjNgbWK9Q8MVW2XxK/WMlkXAUk/T\nF5/GG2OyHCuzxBNg96Qj//6wDs5KJlPPxwdi4E4USvuvb71L2F0yT+l3+8/SzeTP\nOvwqmOY37ihpAa8bt0FGd0VNKMMbWrPMPQmH4Bdl7nC2Wvax+KidiOIdZRqFvGKG\nTT80wD6PAgMBAAECggEAFyjyKZZz52IwsWJK2EvuJE9SA0ZSMrhWZzrpb3kjHN/5\nqlXH/7CfdOWDitFtd7ZcqZgmCZ7NVfTDvWwfeAUd0UI87kFs7HhqbJiM2MKglBsI\nkSRqt//WE7iocwtWGRz2ZStJSEKaP+CPyjAM+QV9tVC4PrZ6zkmJgTPzc3CKtiP0\nRTcl2zaeWUa1W51SXRNlfv27Yq+wSUtfh96Fs0lLlD/DVuLmDTMmTe+iEhMXXmy7\n4e85FqXaTspLAYp747lL8L2kSsq9U9juXqX0iOXO0GC/0uy7IUU9a6Ex5CMUWOH0\n8gT1HehEJ/pIX5Q99IT8a/eE3AWtsUXhp7YXpH3RIQKBgQD+mr7AfwZ2rax82oA9\nt1qjgoBKVmMGo5CQ5vhomAzNqh+9xYephUdH6w5uyu+W3JgZ6lNbJ2xgP7QwJzby\nqRALY2SBz4v0vtFklnPLyE7tTBfFK6kS0MwceuBc7G/XyjneDXnXx2NnparlVcKi\nKKU8O7EspOzB7EBv9ko3uFSLrwKBgQDAaqrENjXZp09H5hD4BCMdiTXldQHx/Q5o\nZdF5xbEFboA6I2t1VEh2ZVNb+MXkvEIXqWoWAY0KncfQM4+uiFeWzDzq9dnMkSlw\nTpYfffRzBEjlztzDq3YafLfs/680XAtDhJJCTEN9olRZXps3xQ4gvnpKYFN+5aNL\nctu4qhfTIQKBgQDm7g7EZLLFJEPGPx2AXPVOR4j7ZB2PoP34IDcCD5/VT1BY/XhO\nLz/3IGHH5jOoP0+Kefq/PCPVrRJPdtIlCWkvGyjHgSutgwJD3R8MoBPOsm0A/tfs\n5AuubVlhj2bmcFtKaCiyqfwkv6QhPUc7c+hjmLTcDH9eaV4M73Rj08KDqwKBgQCs\n/Hiv0+jP16ngAsdIojeLqzqoImxwSMg2NSuBJakDMBfZrNRD9FT9FBVAP0RyYoms\nyiNUy2oonDbySBipmWvdZ5pwxjxbvDmb/RrcDxnAeZ6r9DDnPPP91hho2mmCUinS\nNpJjRjr67QCWJAa5uc/8wiIhUb5e/Ea1YvqEZ27p4QKBgC79APsHDBIAS+h6ewfE\nrrzxWOrtB1qyNLtg5Yb6zhhABTEuBxknZwiLQYTUIEWWRLVkHz86xXjmhivgl2AM\nq8XSdFY5oV34FSkPJrpg+IuqQ9sKWxb61N2jl8fn+lcvPWFYjx9mRFmtkNoGBPFX\nU2nOeF5lUmwp2dgrIUlYvBUO\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigquery@zeta-medley-376406.iam.gserviceaccount.com",
+  "client_id": "103160982936923808386",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigquery%40zeta-medley-376406.iam.gserviceaccount.com"
+}

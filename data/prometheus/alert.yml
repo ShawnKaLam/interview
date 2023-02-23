@@ -1,0 +1,10 @@
+groups:
+- name: demo
+  rules:
+  - alert: service_down
+    expr: up == 0
+    labels:
+      severity: page
+    annotations:
+      summary: "Instance {{ $labels.instance }} down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 2 minutes."

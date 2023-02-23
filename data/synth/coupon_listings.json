@@ -1,0 +1,96 @@
+{
+    "type": "array",
+    "length": {
+      "type": "number",
+      "subtype": "u64",
+      "range": {
+        "low": 20,
+        "high": 21,
+        "step": 1
+      }
+    },
+    "content": {
+      "type": "object",
+      
+      "id": {
+        "type": "number",
+        "subtype": "i32",
+        "id": {}
+      },
+      "name": {
+        "optional": false,
+        "type": "string",
+        "pattern": "(ComA|ComB|ComC|ComD|ComE|ComF)-type(A|B|C|D|E|F)-(2000|3000|4000|5000|6000)"
+      },
+      "description": {
+        "type": "string",
+        "faker": {
+            "generator": "bs"
+        }
+      },  
+      "coupon_type": {
+        "optional": false,
+        "type": "one_of",
+        "variants": [
+          {
+            "type": "string",
+            "pattern": "buy 1 get 2"
+          },
+          {
+            "type": "string",
+            "pattern": "buy 1 get 1"
+          },
+          {
+            "type": "string",
+            "pattern": "5% off"
+          },        
+          {
+            "type": "string",
+            "pattern": "10% off"
+          },
+          {
+            "type": "string",
+            "pattern": "15% off"
+          },             
+          {
+            "type": "string",
+            "pattern": "20% off"
+          }
+        ]
+      },
+      "points_required": {
+        "optional": false,
+        "type": "number",
+        "subtype":"i32",
+        "range": {
+            "low": 2000,
+            "high":6000,
+            "step":1000
+      }
+      },
+      "valid_start": {
+        "type": "date_time",
+        "format": "%Y-%m-%d",
+        "subtype": "naive_date",
+        "begin": "2020-01-01",
+        "end": "2022-12-31"
+      },
+      "valid_end": {
+        "type": "date_time",
+        "format": "%Y-%m-%d",
+        "subtype": "naive_date",
+        "begin": "2020-01-01",
+        "end": "2022-01-18"
+      },
+      "is_deleted": {
+        "type": "bool",
+        "frequency": 0.5
+      },
+      "company_id": {
+        "optional": false,
+        "type": "same_as",
+        "ref": "companies.content.id"
+      }
+
+    }
+}
